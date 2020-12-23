@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+<body>
+<h2>Chuyển đổi tiền tệ</h2>
+<Form action="doitien.html" method="get">
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="soluong"></td>
+        <td><select id="loaitien1">
+            <option value="23000" selected>Vietnam</option>
+            <option value="1">USD</option>
+            <option value="1109">Won</option>
+            <option value="104">Yen</option>
+            </select>
+        </td>
+        <td>
+            <select id="loaitien2">
+            <option value="23000" >Vietnam</option>
+            <option value="1" selected>USD</option>
+            <option value="1109">Won</option>
+            <option value="104">Yen</option>
+            </select>
+        </td>
+        <td><input type="submit" value="Convert" onclick="show();"></td>
+    </tr>
+</table>
+</Form>
+</body>
+</html>
+<script>
+    function show() {
+        let soluong;
+        let loai1;
+        let loai2;
+        let sotien;
+        soluong=document.getElementById("soluong").value;
+        loai1= document.getElementById('loaitien1').value;
+        loai2=document.getElementById('loaitien2').value;
+        sotien= (soluong*loai2)/loai1
+        document.write('số tiền:'+sotien);
+        // document.getElementById('hien').innerText=sotien;
+    }
+</script>
