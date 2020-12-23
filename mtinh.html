@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính</title>
+</head>
+<body>
+        <input type="text" id="phantu1">
+        <input type="text" id="phantu2"> <br>
+        <button id="cong" onclick="cong()">Addition(+)</button>
+        <button id="tru" onclick="tru()">Subtraction(-)</button>
+        <button id="phepnhan" onclick="phepnhan()">Multiolication(X)</button>
+        <button id="phepchia" onclick="phepchia()">Division(+)</button>
+
+</body>
+</html>
+<script>
+    function cong() {
+        let sothunhat= +document.getElementById('phantu1').value;
+        let sothuhai= +document.getElementById('phantu1').value;
+        let Result =sothunhat+sothuhai;
+        alert('ket qua phep tinh:'+ Result)
+    }
+    function tru() {
+        let sothunhat= +document.getElementById('phantu1').value;
+        let sothuhai= +document.getElementById('phantu1').value;
+        let Result =sothunhat-sothuhai;
+        alert('ket qua phep tinh:'+ Result)
+    }
+    function phepnhan() {
+        let sothunhat= +document.getElementById('phantu1').value;
+        let sothuhai= +document.getElementById('phantu1').value;
+        let Result =sothunhat*sothuhai;
+        alert('ket qua phep tinh:'+ Result)
+    }
+    function phepchia() {
+        let sothunhat= document.getElementById('phantu1').value;
+        let sothuhai= document.getElementById('phantu1').value;
+        let Result =sothunhat/sothuhai;
+        alert('ket qua phep tinh:'+ Result)
+    }
+</script>
